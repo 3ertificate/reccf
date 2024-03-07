@@ -1,5 +1,5 @@
 {
-  "remarks": "xtu875cga (IRCF Fragment)",
+  "remarks": "mmahdavi86gmail.com",
   "log": {
     "access": "",
     "error": "",
@@ -48,26 +48,31 @@
   "outbounds": [
     {
       "tag": "proxy",
-      "protocol": "trojan",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
             "address": "www.speedtest.net",
-            "level": 1,
-            "flow": "",
-            "method": "chacha20-poly1305",
-            "ota": false,
-            "password": "HXNeThgotw",
-            "port": 2087
+            "port": 8443,
+            "users": [
+              {
+                "id": "9b6fc02c-c532-445a-8248-1c9b1181eada",
+                "alterId": 0,
+                "email": "t@t.tt",
+                "security": "auto",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
+        "network": "ws",
         "security": "tls",
         "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "GUImb.SHOP",
+          "allowInsecure": false,
+          "serverName": "RecCf.sHOp",
           "alpn": [
             "h2",
             "http/1.1"
@@ -75,9 +80,11 @@
           "fingerprint": "chrome",
           "show": false
         },
-        "grpcSettings": {
-          "multiMode": false,
-          "serviceName": ""
+        "wsSettings": {
+          "path": "/iran",
+          "headers": {
+            "Host": "RecCf.sHOp"
+          }
         },
         "sockopt": {
           "dialerProxy": "fragment",
